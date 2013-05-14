@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C208B5BCBEFE43219DF8FCF3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA62F06BA346447DAC8567B7 /* libPods.a */; };
+		D29A630E172148F700630596 /* ETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A630C172148F700630596 /* ETViewController.m */; };
+		D29A630F172148F700630596 /* ETViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29A630D172148F700630596 /* ETViewController.xib */; };
+		D29A631317214BCD00630596 /* SectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A631217214BCD00630596 /* SectionObject.m */; };
+		D29A63171721642200630596 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A63161721642200630596 /* NewsItem.m */; };
 		D2AFC1CE171FD765006268ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AFC1CD171FD765006268ED /* UIKit.framework */; };
 		D2AFC1D0171FD765006268ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AFC1CF171FD765006268ED /* Foundation.framework */; };
 		D2AFC1D2171FD765006268ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AFC1D1171FD765006268ED /* CoreGraphics.framework */; };
@@ -19,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8492C9EEB81E491CBBCDE79A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D29A630B172148F700630596 /* ETViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETViewController.h; sourceTree = "<group>"; };
+		D29A630C172148F700630596 /* ETViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETViewController.m; sourceTree = "<group>"; };
+		D29A630D172148F700630596 /* ETViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETViewController.xib; sourceTree = "<group>"; };
+		D29A631117214BCD00630596 /* SectionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionObject.h; sourceTree = "<group>"; };
+		D29A631217214BCD00630596 /* SectionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionObject.m; sourceTree = "<group>"; };
+		D29A63151721642200630596 /* NewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
+		D29A63161721642200630596 /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
 		D2AFC1CA171FD765006268ED /* EtSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AFC1CD171FD765006268ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2AFC1CF171FD765006268ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +45,7 @@
 		D2AFC1DF171FD765006268ED /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D2AFC1E1171FD765006268ED /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D2AFC1E3171FD765006268ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DA62F06BA346447DAC8567B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,18 +56,52 @@
 				D2AFC1CE171FD765006268ED /* UIKit.framework in Frameworks */,
 				D2AFC1D0171FD765006268ED /* Foundation.framework in Frameworks */,
 				D2AFC1D2171FD765006268ED /* CoreGraphics.framework in Frameworks */,
+				C208B5BCBEFE43219DF8FCF3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D29A630A1721488300630596 /* ET View */ = {
+			isa = PBXGroup;
+			children = (
+				D29A630B172148F700630596 /* ETViewController.h */,
+				D29A630C172148F700630596 /* ETViewController.m */,
+				D29A630D172148F700630596 /* ETViewController.xib */,
+			);
+			name = "ET View";
+			sourceTree = "<group>";
+		};
+		D29A631017214BB000630596 /* Section Item */ = {
+			isa = PBXGroup;
+			children = (
+				D29A631117214BCD00630596 /* SectionObject.h */,
+				D29A631217214BCD00630596 /* SectionObject.m */,
+			);
+			name = "Section Item";
+			sourceTree = "<group>";
+		};
+		D29A63141721640E00630596 /* News Item */ = {
+			isa = PBXGroup;
+			children = (
+				D29A63151721642200630596 /* NewsItem.h */,
+				D29A63161721642200630596 /* NewsItem.m */,
+			);
+			name = "News Item";
+			sourceTree = "<group>";
+		};
 		D2AFC1C1171FD765006268ED = {
 			isa = PBXGroup;
 			children = (
+				D29A63141721640E00630596 /* News Item */,
+				D29A631017214BB000630596 /* Section Item */,
+				D29A630A1721488300630596 /* ET View */,
+				D2AFC1EA171FD76D006268ED /* Splash Screen */,
 				D2AFC1D3171FD765006268ED /* EtSample */,
 				D2AFC1CC171FD765006268ED /* Frameworks */,
 				D2AFC1CB171FD765006268ED /* Products */,
+				8492C9EEB81E491CBBCDE79A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +119,7 @@
 				D2AFC1CD171FD765006268ED /* UIKit.framework */,
 				D2AFC1CF171FD765006268ED /* Foundation.framework */,
 				D2AFC1D1171FD765006268ED /* CoreGraphics.framework */,
+				DA62F06BA346447DAC8567B7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +148,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D2AFC1EA171FD76D006268ED /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Splash Screen";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +165,7 @@
 				D2AFC1C6171FD765006268ED /* Sources */,
 				D2AFC1C7171FD765006268ED /* Frameworks */,
 				D2AFC1C8171FD765006268ED /* Resources */,
+				815136ECB13F49B0B5A15DCA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,10 +211,28 @@
 				D2AFC1E0171FD765006268ED /* Default.png in Resources */,
 				D2AFC1E2171FD765006268ED /* Default@2x.png in Resources */,
 				D2AFC1E4171FD765006268ED /* Default-568h@2x.png in Resources */,
+				D29A630F172148F700630596 /* ETViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		815136ECB13F49B0B5A15DCA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2AFC1C6171FD765006268ED /* Sources */ = {
@@ -166,6 +241,9 @@
 			files = (
 				D2AFC1DA171FD765006268ED /* main.m in Sources */,
 				D2AFC1DE171FD765006268ED /* AppDelegate.m in Sources */,
+				D29A630E172148F700630596 /* ETViewController.m in Sources */,
+				D29A631317214BCD00630596 /* SectionObject.m in Sources */,
+				D29A63171721642200630596 /* NewsItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +321,7 @@
 		};
 		D2AFC1E8171FD765006268ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8492C9EEB81E491CBBCDE79A /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EtSample/EtSample-Prefix.pch";
@@ -254,6 +333,7 @@
 		};
 		D2AFC1E9171FD765006268ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8492C9EEB81E491CBBCDE79A /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EtSample/EtSample-Prefix.pch";
@@ -282,6 +362,7 @@
 				D2AFC1E9171FD765006268ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

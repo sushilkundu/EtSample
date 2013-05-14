@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ETViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+	
+    self.window.rootViewController = [[ETViewController alloc] initWithNibName:@"ETViewController" bundle:nil];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
